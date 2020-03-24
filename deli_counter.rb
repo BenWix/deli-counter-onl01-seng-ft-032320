@@ -19,6 +19,10 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  katz_deli.length > 0 ? puts "Currently serving #{katz_deli.shift}": puts "There is nobody waiting to be served"
+  if katz_deli.length > 0 
+    puts "Currently serving #{katz_deli.shift}"
+  else 
+    puts "There is nobody waiting to be served"
+  end 
   katz_deli
 end 
