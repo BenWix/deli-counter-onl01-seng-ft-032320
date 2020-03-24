@@ -5,7 +5,7 @@ def line(katz_deli)
     string = "The line is currently:"
     #line_position = 1 
     katz_deli.each do |name|
-      string += " #{katz_deli.index(name)}. #{name}"
+      string += " #{katz_deli.index(name)+1}. #{name}"
       #line_position += 1 
     end
   else 
