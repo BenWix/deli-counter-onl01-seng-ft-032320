@@ -6,6 +6,7 @@ def line(katz_deli)
     line_position = 1 
     katz_deli.each do |name|
       string += " #{line_position}. #{name}"
+      line_position += 1 
     end
   else 
     string = "The line is currently empty."
